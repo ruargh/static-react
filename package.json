@@ -2,6 +2,7 @@
   "name": "static-react",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://docs.travis-ci.com/user/deployment/s3/",
   "dependencies": {
     "babel-loader": "^8.0.4",
     "react": "^16.7.0",
