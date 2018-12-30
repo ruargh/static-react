@@ -9,10 +9,10 @@ script:
   - yarn build
 deploy:
   provider: s3
-  access_key_id: AKIAIJQFM5L2LQPC73DA
-  secret_access_key: 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
+  access_key_id: $AWS_ACCESS_KEY_ID
+  secret_access_key: $AWS_SECRET_ACCESS_KEY
   skip_cleanup: true
   local_dir: build
   default_text_charset: 'utf-8'
   bucket: 'astrotim'
-  region: us-east-2
+  region: us-east
