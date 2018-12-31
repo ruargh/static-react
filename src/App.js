@@ -14,13 +14,14 @@ class App extends Component {
             <Link to="/">
               <img src={logo} className="App-logo" alt="logo" />
             </Link>
-            <h1 className="App-title">Welcome to React</h1>
-            <Link to="/">Home</Link> <Link to="/post/">Post</Link>
+            <h1 className="App-title">Static React</h1>
           </header>
-          <Switch>
-            <Route exact path="/" component={Home} />
-            <Route path="/post/" component={Post} />
-          </Switch>
+          <main>
+            <Switch>
+              <Route exact path="/" component={Home} />
+              <Route path="/post/:id" component={Post} />
+            </Switch>
+          </main>
         </div>
       </BrowserRouter>
     );
